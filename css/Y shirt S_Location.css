@@ -1,0 +1,217 @@
+@charset "UTF-8";
+*{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+header{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #2d3a4b;
+}
+.logo{
+    float: left;
+    margin-left: 50px;
+}
+.logo img{
+    height: 95px;
+}
+.top_menu{
+    float: right;
+    width: 240px;
+    line-height: 40px;
+    color: #fff;
+    position: absolute;
+    right: 10px;
+    /* background-color: beige; */
+}
+.top_menu li{
+    display: inline;
+    margin: 0 5px;
+}
+.top_menu a{
+    color: #fff;
+    margin-left: 10px;
+    transition: .3s;
+    font-size: 12px;
+}
+.top_menu a:hover{
+    font-size: 15px;
+    transform: scale(1.2);
+}
+.search1{
+    height: 27px;
+    border-radius: 10px;
+    vertical-align: top;
+    width: 150px;
+}
+.search2{
+    width: 60px;
+    height: 30px;
+    vertical-align: top;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+nav{
+    display: inline-block;
+    position: absolute;
+    right: 0%;
+    top: 60%;
+    font-size: 18px;
+    color: #fff;
+}
+nav li{
+    display: inline;
+    margin: 0 18px;
+}
+nav li a{
+    color: #fff;
+}
+.middle{
+    width: 100%;
+    height: 2800px;
+    font-size: 15px;
+}
+.leftmenu{
+    float: left;
+    background-color: #656e7a;
+    width: 8%;
+    height: 100%;
+}
+.leftmenu li{
+    margin:30px 10px;
+}
+.leftmenu a{
+    color: #fff;
+    line-height: 20px;
+    margin-left: 10px;
+}
+.center{
+    float: left;
+    width: 92%;
+    height: 2800px;
+}
+.drt{
+    margin: 100px;
+    height: 700px;
+    border-bottom: 3px solid #e6e6e6;
+}
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 30px;
+}
+#map{
+    width:100%;
+    height:500px;
+}
+#container {overflow:hidden;height:300px;position:relative;}
+#btnRoadview,  #btnMap {position:absolute;top:5px;left:5px;padding:7px 12px;font-size:14px;border: 1px solid #dbdbdb;background-color: #fff;border-radius: 2px;box-shadow: 0 1px 1px rgba(0,0,0,.04);z-index:1;cursor:pointer;}
+#btnRoadview:hover,  #btnMap:hover{background-color: #fcfcfc;border: 1px solid #c1c1c1;}
+#container.view_map #mapWrapper {z-index: 10;}
+#container.view_map #btnMap {display: none;}
+#container.view_roadview #mapWrapper {z-index: 0;}
+#container.view_roadview #btnRoadview {display: none;}
+.text{
+    font-size: 23px;
+    font-family: "맑은 고딕";
+    line-height: 35px;
+}
+.INFORMATION{
+    margin: 20px 100px;
+    height: 450px;
+    border-bottom: 3px solid #e6e6e6;
+}
+.info{
+    margin: 20px;
+    padding-left: 60px;
+    width: 100%;
+    height: 300px;
+}
+.sbs{
+    margin: 20px 100px;
+    height: 300px;
+}
+.sbs_text{
+    margin: 30px 0 0 70px;
+    font-size: 23px;
+    font-family: "맑은 고딕";
+}
+.subway{
+    padding: 50px;
+    float: left;
+    height: 300px;
+    width: 625px;
+}
+.subway h2{
+    border-left: 5px solid aqua;
+    padding-left: 20px;
+}
+.bus{
+    float: left;
+    height: 300px;
+    width: 625px;
+    padding: 50px;
+}
+.bus h2{
+    border-left: 5px solid aqua;
+    padding-left: 20px;
+}
+.navigation{
+    clear: both;
+    float: left;
+    height: 300px;
+    width: 625px;
+    padding: 50px;
+}
+.navigation h2{
+    border-left: 5px solid aqua;
+    padding-left: 20px;
+}
+.park{
+    padding: 50px;
+    float: left;
+    height: 300px;
+    width: 625px;
+}
+.park h2{
+    border-left: 5px solid aqua;
+    padding-left: 20px;
+}
+
+footer{
+    float: left;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    background-color: #e6e6e6;
+    margin: 10px -8px 0;
+}
+footer p{text-align: center;
+    font-size: 10px;
+    padding-top: 20px;
+    line-height: 20px;
+}
+footer p a{color: #000;}
+footer p a:hover{font-weight: bold; text-decoration: underline;}
+footer li{
+    display: inline;
+    float: right;
+    margin-right: 10px;
+}
+footer li a{
+    font-size: 10px;
+    color: #000;
+}
+footer li a:hover{text-decoration: underline;}

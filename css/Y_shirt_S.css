@@ -1,0 +1,376 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'MonoplexKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #2d3a4b !important;
+}
+.logo{
+    float: left;
+    margin-left: 50px;
+}
+.logo img{
+    height: 95px;
+}
+.top_menu{
+    float: right;
+    width: 240px;
+    line-height: 40px;
+    color: #fff;
+    position: absolute;
+    right: 0px;
+}
+.top_menu li{
+    display: inline;
+    margin: 0 5px;
+}
+.top_menu a{
+    color: #fff;
+    margin-left: 10px;
+    transition: .3s;
+    font-size: 12px;
+}
+.top_menu a:hover{
+    font-size: 15px;
+    transform: scale(1.2);
+}
+.hbg{
+    display: none;
+    position: absolute;
+    right: 0%;
+    margin-top: 18px;
+    margin-right: 20px;
+}
+.search{
+    position: absolute;
+    padding-top: 10px;
+}
+.search1{
+    height: 27px;
+    border-radius: 10px;
+    width: 150px;
+}
+.search2{
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    margin-left: 5px;
+}
+nav{
+    display: inline-block !important;
+    position: absolute !important;
+    right: 0% !important;
+    top: 50% !important;
+    font-size: 18px !important;
+    color: #fff !important;
+}
+nav li{
+    display: inline !important;
+    margin: 0 10px !important;
+}
+nav li a{
+    color: #fff;
+    background: none !important;
+}
+nav li a:hover{
+    color: beige;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+.box{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;    
+}
+.box p{
+    font-size: 40px;
+}
+.bx-wrapper{
+    width: 90% !important;
+}
+.bx-viewport{
+    height: 500px;
+}
+.market{
+    width: 100%;
+    height: 550px;
+}
+.market_list{
+    width: 100%;
+}
+.market img{
+    width: 100%;
+    height: 490px;
+}
+#wrapper{
+    margin-bottom: 40px;
+}
+.bx-next{
+    background: url(../resources/images/yys_next.svg) !important;
+    opacity: .8;
+    margin-right: 10px;
+}
+.bx-prev{
+    background: url(../resources/images/yys_prev.svg)!important;
+    opacity: .8;
+}
+.center{
+    margin: 30px 30px;
+    margin-right: 30px;
+    width: 93%;
+    height: 165px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;;
+}
+.center li{
+    font-size: 10px;
+}
+.center li a:hover{
+    opacity: .5;
+}
+.best1{
+    float: left;
+    width: 22%;
+    height: 18vh;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.best2{
+    float: left;
+    width: 22%;
+    height: 18vh;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.best3{
+    float: left;
+    width: 22%;
+    height: 18vh;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.notice{
+    float: left;
+    width: 22%;
+    height: 18vh;
+    margin-left: 25px;
+}
+.notice_title{
+    background: #999;
+    vertical-align: middle;
+}
+.notice_title small{
+    margin-top: 4px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    float: right;
+}
+table{
+    table-layout: fixed;
+}
+tr, td, th{
+    font-size: 10px !important;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+th{
+    margin-right: 10px !important;
+    width: 30px;
+}
+.notice li{
+    line-height: 20px;
+}
+.notice h4{
+    font-size: 20px;
+}
+.notice a{
+    font-size: 12px;
+    font-family: 'MonoplexKR-Regular';
+    color: #000;
+}
+.notice span{
+    float: right;
+    color: lightgray;
+}
+footer{
+    position: relative;
+    padding: 10px;
+    background-color: #e6e6e6;
+    margin-top: 70px;
+    width: 100%;
+    height: 115px;
+    bottom: 0px;
+}
+footer p{
+    text-align: center;
+    font-size: 10px;
+    padding-top: 20px;
+    line-height: 15px;
+}
+.ft_text{
+    text-align: center;
+}
+footer li{display: inline;}
+footer li a{
+    position: relative; 
+    margin: 0px; 
+    font-size: 8px; 
+    color: #404040;
+    line-height: 22px;
+    padding-bottom: 10px;
+}
+footer ul{
+    position: absolute;
+    width: 230px;
+    right: 0;
+}
+footer p a{color: #000;}
+footer p a:hover{font-weight: bold; text-decoration: underline;}
+footer li a:hover{font-weight: bold; text-decoration: underline;}
+@media (max-width: 767px) {
+    *{
+        margin: 0 auto;
+        padding: 0;
+    }
+    header{
+        height: 50px;
+        border: none !important;
+    }
+    .logo{
+        height: 80px;
+    }
+    .logo a img{
+        width: 100px;
+        height: 50px !important;
+        margin-left: -30px;
+    }
+    .top_menu{
+        margin-right: -60px;
+        color: #2d3a4b;
+    }
+    .top_menu a{
+        font-size: 8px;
+        margin-left: 5px;
+        line-height: 50px;
+    }
+    nav{
+        color: #2d3a4be9;
+        background: #2d3a4be9;
+        border-radius: 0 0 10px 10px;
+        z-index: 10;
+        width: 150px;
+        line-height: 0px !important;
+        margin-top: 15px;
+        border: none !important;
+    }
+    nav li a{
+        background-color: none !important;
+    }
+    .fas{
+        background: none !important;
+        border: none !important;
+        color: #fff;
+    }
+    header nav a{
+        display: block;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+    .box p{
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    .search1{
+        position: relative;
+        height: 20px;
+        width: 85px;
+        font-size: 8px;
+    }
+    .search2{
+        position: absolute;
+        width: 30px !important;
+        height: 20px !important;
+        font-size: 8px;
+    }
+    #wrapper img{
+        height: 200px;
+    }
+    .market{
+        height: 350px;
+    }
+    .bx-viewport{
+        height: 300px !important;
+    }
+    .market img{
+        width: 100%;
+        height: 290px;
+    }
+    .notice{
+        position: absolute;
+        right: 3%;
+    }
+    .notice_title h4{
+        font-size: 11px;
+        line-height: 17px;
+    }
+    .notice_title small{
+        font-size: 11px;
+    }
+    .notice ul{
+        margin-top: 10px;
+    }
+    .notice li{
+        font-size: 8px;
+        line-height: 10px;
+    }
+    .notice a{
+        font-size: .8rem;
+        font-family: 'MonoplexKR-Regular';
+        color: #000;
+    }
+    .notice a span{
+        visibility: hidden;
+    }
+    th{
+        width: 20px;
+    }
+    td{
+        text-overflow: ellipsis !important;
+        overflow: hidden !important;
+        word-break: break-all;
+    }
+    table{
+        vertical-align: middle;
+    }
+    footer{
+        visibility: hidden;
+    }
+   
+}

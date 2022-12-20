@@ -12,11 +12,18 @@
     text-decoration: none;
     font-family: 'Noto Sans KR', sans-serif;
 }
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body{
     width: 100%;
     height: 100%;
 }
-
+hr{
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
 header{
     position: relative;
     width: 100%;
@@ -32,11 +39,11 @@ header{
 }
 .top_menu{
     float: right;
-    width: 240px;
+    width: 280px;
     line-height: 40px;
     color: #fff;
     position: absolute;
-    right: 0px;
+    right: 40px;
 }
 .top_menu li{
     display: inline;
@@ -45,36 +52,45 @@ header{
 .top_menu a{
     color: #fff;
     margin-left: 10px;
-    transition: .3s;
-    font-size: 12px;
+    font-size: 14px;
+    font-family: "맑은 고딕";
 }
 .top_menu a:hover{
-    font-size: 15px;
-    transform: scale(1.2);
+    color: #fff;
+    text-decoration: underline;
 }
 .hbg{
     display: none;
     position: absolute;
     right: 0%;
-    margin-top: 18px;
-    margin-right: 20px;
+    margin-top: 10px !important;
+    margin-right: 15px !important;
 }
 .search{
     position: absolute;
     padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    opacity: 1;
+}
+.search img{
+    position: absolute;
+    width: 25px;
+    height: 29px;
+    right: 10px;
+    top: 13px;
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+}
+.search img:hover{
+    cursor: pointer;
 }
 .search1{
     height: 27px;
     border-radius: 10px;
-    width: 150px;
-}
-.search2{
-    width: 60px;
-    height: 30px;
-    border-radius: 10px;
-    border: none;
-    font-size: 16px;
-    margin-left: 5px;
+    width: 50px;
+    color: #000;
 }
 nav{
     display: inline-block !important;
@@ -91,13 +107,13 @@ nav li{
 nav li a{
     color: #fff;
     background: none !important;
+    transition: .2s;
 }
 nav li a:hover{
-    color: beige;
+    color: #fff;
     font-weight: bold;
-    font-size: 16px;
-    text-decoration: underline;
-    transform: scale(1.2);
+    font-size: 18px;
+    transform: scale(1.1);
 }
 .box{
     display: block;
@@ -219,40 +235,90 @@ th{
     color: lightgray;
 }
 footer{
+    width: 100%;
+    height: 130px;
+    text-align: center;
     position: relative;
     padding: 10px;
     background-color: #e6e6e6;
-    margin-top: 70px;
-    width: 100%;
-    height: 115px;
-    bottom: 0px;
 }
 footer p{
     text-align: center;
     font-size: 10px;
     padding-top: 20px;
-    line-height: 15px;
+    line-height: 20px;
 }
-.ft_text{
-    text-align: center;
+footer p a{
+    color: #000;
 }
-footer li{display: inline;}
+footer p a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.ftlist{
+    margin-right: 10px;
+    width: 280px;
+    height: 25px;
+}
+footer li{
+    display: inline;
+    float: right;
+    margin-right: 10px;
+}
 footer li a{
-    position: relative; 
-    margin: 0px; 
-    font-size: 8px; 
-    color: #404040;
-    line-height: 22px;
-    padding-bottom: 10px;
+    font-size: 10px;
+    font-family: "맑은 고딕";
+    color: #000;
 }
-footer ul{
-    position: absolute;
-    width: 230px;
-    right: 0;
+@media (min-width: 768px)  and (max-width: 1199px){
+    *{
+        margin: 0 auto;
+        padding: 0;
+    }
+    header{
+        height: 70px;
+    }
+    nav{
+        top: 40% !important;
+    }
+    .logo img{
+        height: 70px;
+    }
+    .top_menu{
+        font-size: 10px !important;
+        position: absolute;
+    }
+    .top_menu ul{
+        right: 0;
+        margin-left: 50px;
+    }
+    .top_menu a{
+        font-size: 12px;
+        float: left;
+    }
+    nav > ul{
+        font-size: 14px;
+    }
+    nav > ul> li{
+        margin: 0 !important;
+    }
+    nav > ul > a{
+        margin: 10px;
+    }
+    nav li a:hover{
+        font-size: 14px;
+    }
+    .search2{
+        width: 40px;
+        height: 25px;
+        border-radius: 10px;
+        border: none;
+        font-size: 14px;
+        margin-top: 12px;
+        margin-left: 5px;
+        background: #656e7a;
+    }
 }
-footer p a{color: #000;}
-footer p a:hover{font-weight: bold; text-decoration: underline;}
-footer li a:hover{font-weight: bold; text-decoration: underline;}
 @media (max-width: 767px) {
     *{
         margin: 0 auto;
@@ -263,7 +329,7 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
         border: none !important;
     }
     .logo{
-        height: 80px;
+        height: 50px;
     }
     .logo a img{
         width: 100px;
@@ -271,13 +337,21 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
         margin-left: -30px;
     }
     .top_menu{
-        margin-right: -60px;
+        margin-right: -40px;
         color: #2d3a4b;
     }
+    .top_menu ul{
+        width: 300px;
+        margin-right: 20px;
+    }
     .top_menu a{
-        font-size: 8px;
+        font-size: 12px;
         margin-left: 5px;
         line-height: 50px;
+    }
+    nav li a{
+        background-color: none !important;
+        font-size: 12px;
     }
     nav{
         color: #2d3a4be9;
@@ -285,23 +359,36 @@ footer li a:hover{font-weight: bold; text-decoration: underline;}
         border-radius: 0 0 10px 10px;
         z-index: 10;
         width: 150px;
+        overflow-x: hidden !important;
         line-height: 0px !important;
         margin-top: 15px;
         border: none !important;
     }
-    nav li a{
-        background-color: none !important;
+    nav li a:hover{
+        font-size: 12px;
+        margin-left: 4px;
+        font-weight: normal;
     }
-    .fas{
+    .search img{
+        width: 20px;
+        height: 15px;
+        top: 35px;
+        right: -120px;
+    }
+    .search1{
+        position: relative;
+        height: 20px !important;
+        font-size: 8px;
+        margin-left: 10px;
+        width: 132px !important;
+        margin-top: 10px !important;
+        margin-bottom: 5px !important;
+    
+    }
+    .hbg{
         background: none !important;
         border: none !important;
-        color: #fff;
-    }
-    header nav a{
-        display: block;
-        margin-left: 20px;
-        margin-bottom: 10px;
-        font-size: 12px;
+        color: #fff !important;
     }
     .box p{
         font-size: 18px;

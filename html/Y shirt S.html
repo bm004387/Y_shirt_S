@@ -36,18 +36,42 @@
                 <i class="fas fa-bars visible-xs hbg navbar-toggle collapsed" data-toggle="collapse" data-target="#bsnavibar"></i>
             </a>
             <!-- id값을 동일하게 bsnavibar 적용 -->
-            <nav class="collapse navbar-collapse" id="bsnavibar">
+            <nav class="collapse navbar-collapse visible-xs" id="bsnavibar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#" title="Best">Best</a></li>
-                    <li class="active"><a href="#" title="상의">Shirts</a></li>
-                    <li class="active"><a href="#" title="하의">Bottom</a></li>
-                    <li class="active"><a href="#" title="자켓">Outer</a></li>
-                    <li class="active"><a href="#" title="신발">Shoes</a></li>
-                    <li class="active"><a href="#" title="악세사리">Acc</a></li>
-                    <li class="active"><a href="#" title="고객센터">C/S</a></li>
-                    <li class="search"><input class="search1" type="search" title="검색어입력"><input class="search2" type="button" value="검색" title="검색"></li>
+                    <li class="active text-capitalize"><a href="#" title="Best">best</a></li>
+                    <li class="active text-capitalize"><a href="#" title="상의">shirts</a></li>
+                    <li class="active text-capitalize"><a href="#" title="하의">bottom</a></li>
+                    <li class="active text-capitalize"><a href="#" title="자켓">outer</a></li>
+                    <li class="active text-capitalize"><a href="#" title="신발">shoes</a></li>
+                    <li class="active text-capitalize"><a href="#" title="악세사리">acc</a></li>
+                    <li class="active text-capitalize"><a href="#" title="고객센터">c/s</a></li>
+                    <li class="search">
+                        <input class="search1 visible-lg visible-xs form-control" type="search" title="검색어입력" placeholder="검색">
+                        <img class="visible-lg visible-xs" src="../resources/images/yys_search_icon.svg" alt="검색아이콘">
+                    </li>
+                    <li>
+                        <input class="search2 visible-sm visible-md" type="button" value="검색" title="검색" data-toggle="modal" data-target="#myModal">    
+                    </li>
                 </ul>
             </nav>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">검색어를 입력해주세요</h4>
+                    </div>
+                    <div class="modal-body">
+                    <input class="form-control" type="text" placeholder="검색어입력">
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    <button type="button" class="btn btn-primary">검색</button>
+                    </div>
+                </div>
+                </div>
+            </div>
         </header>
     </div>
     <div class="box">

@@ -4,57 +4,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/mission2.css">
+    <link rel="stylesheet" href="../css/Y_shirt_S_join.css">
     <title>Y shirt S Join</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap_v3_3_2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="../javascript/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.js"></script>
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
-    <script src="../javascript/test.js"></script>
+    <script src="../javascript/Y_shirt_s_join.js"></script>
 </head>
 <body>
     <div id="page">
         <header>
             <div class="logo">
-                <a href="Y shirt S.html" title="Y shirt S"><img src="../resources/images/Y_shirt_S2.png" alt="Y shirt S"style="height: 94px;"></a>
+                <a href="#" title="Y shirt S"><img src="../resources/images/Y_shirt_S2.png" alt="Y shirt S"></a>
             </div>
             <div class="top_menu">
-                <a href="Y shirt S.html" title="홈">홈</a>|
-                <a href="Y shirt S_FAQ.html" title="게시판">게시판</a>|
-                <a href="#" title="로그인">로그인</a>|
-                <a href="Y shirt S_Join.html" title="회원가입">회원가입</a>
+                <ul>
+                    <li><a href="#" title="홈">홈</a></li>
+                    <li><a href="#" title="게시판">게시판</a></li>
+                    <li><a href="#" title="로그인">로그인</a></li>
+                    <li><a href="#" title="회원가입">회원가입</a></li>
+                </ul>
             </div>
-            <nav>
-                <li><a href="#" title="Best">Best</a></li>|
-                <li><a href="#" title="상의">Shirts</a></li>|
-                <li><a href="#" title="하의">Bottom</a></li>|
-                <li><a href="#" title="자켓">Outer</a></li>|
-                <li><a href="#" title="신발">Shoes</a></li>|
-                <li><a href="#" title="악세사리">Acc</a></li>|
-                <li><a href="Y shirt S_FAQ.html" title="고객센터">C/S</a></li>
-                <li class="search"><input type="search" title="검색어입력" style="height: 22px;"><input type="button" class="button" value="검색" title="검색"></li>
+            <a href="#">
+                <!-- fontawesom 사용 -->
+                <!-- bootstrap 사용하여 큰화면 데스크탑 화면에서 보이지 않도록 hidden-lg적용 -->
+                <!-- 뷰포트가 좁을 때 nav가 보여지지 않도록 navbar-toggle collapsed적용 -->
+                <!-- 뷰포트가 좁을 때 처음 #bsnavidar가 숨겨질 수 있도록 data-toggle="collapse"을 적용, fontawesom 이미지가 클릭했을 때 data-target의 메뉴가 toggle할 수 있도록 id값을 알맞게 설정 -->
+                <i class="fas fa-bars visible-xs hbg navbar-toggle collapsed" data-toggle="collapse" data-target="#bsnavibar"></i>
+            </a>
+            <!-- id값을 동일하게 bsnavibar 적용 -->
+            <nav class="collapse navbar-collapse visible-xs" id="bsnavibar">
+                <ul class="nav navbar-nav">
+                    <li class="active text-capitalize"><a href="#" title="Best">best</a></li>
+                    <li class="active text-capitalize"><a href="#" title="상의">shirts</a></li>
+                    <li class="active text-capitalize"><a href="#" title="하의">bottom</a></li>
+                    <li class="active text-capitalize"><a href="#" title="자켓">outer</a></li>
+                    <li class="active text-capitalize"><a href="#" title="신발">shoes</a></li>
+                    <li class="active text-capitalize"><a href="#" title="악세사리">acc</a></li>
+                    <li class="active text-capitalize"><a href="#" title="고객센터">c/s</a></li>
+                    <li class="search">
+                        <input class="search1 visible-lg visible-xs form-control" type="search" title="검색어입력" placeholder="검색">
+                        <img class="visible-lg visible-xs" src="../resources/images/yys_search_icon.svg" alt="검색아이콘">
+                    </li>
+                    <li>
+                        <input class="search2 visible-sm visible-md" type="button" value="검색" title="검색" data-toggle="modal" data-target="#myModal">    
+                    </li>
+                </ul>
             </nav>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">검색어를 입력해주세요</h4>
+                    </div>
+                    <div class="modal-body">
+                    <input class="form-control" type="text" placeholder="검색어입력">
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    <button type="button" class="btn btn-primary">검색</button>
+                    </div>
+                </div>
+                </div>
+            </div>
         </header>
-        <div class="leftmenu">
-            <li><a href="#">아이디찾기<hr></a></li>
-            <li><a href="#">비밀번호찾기<hr></a></li>
-            <li><a href="#">마이페이지<hr></a></li>
-            <li><a href="#">고객센터<hr></a></li>
-            <li><a href="#">즐겨찾기<hr></a></li>
-        </div>
         <div class="join">
-            <img src="../resources/images/signup_login_icon.ico" alt="회원가입이미지" style="float: left; margin: 50px 90px; width: 70px; height: 70px;">
+            <div class="leftmenu hidden-xs">
+                <li><a href="#">아이디찾기<hr></a></li>
+                <li><a href="#">비밀번호찾기<hr></a></li>
+                <li><a href="#">마이페이지<hr></a></li>
+                <li><a href="#">고객센터<hr></a></li>
+                <li><a href="#">즐겨찾기<hr></a></li>
+            </div>
+            <img class="join_icon hidden-xs" src="../resources/images/signup_login_icon.ico" alt="회원가입이미지">
             <form action="#" method="post">
-                <fieldset class="sigup_list">
+                <fieldset class="signup_list">
                     <legend> 회 원 정 보  입 력</legend>
-                    <p style="font-size: 12px; color: #F45D5C;">*는 필수 입력 사항입니다.</p>
+                    <p style="font-size: 14px; color: #F45D5C;">*는 필수 입력 사항입니다.</p>
                     <li>
                         <label for="checkbox">회원구분<strong> *</strong></label>
                         개인회원 <input type="radio" name="member" required> 사업자회원 <input type="radio" name="member"> 외국인회원(foreigner) <input type="radio" name="member"><hr>
                     </li> 
                     <li>
                         <label for="name">이름<strong> *</strong></label>
-                        <input type="text" placeholder="이름" id="name" style="border: 3px solid #2d3a4b; border-radius: 7px;" required><hr>
+                        <input class="form-control" type="text" placeholder="이름" id="name" style="width: 150px;" required><hr>
                     </li>
                     <li>
                         <label for="gender">성별<strong> *</strong></label>
@@ -62,18 +100,19 @@
                     </li>
                     <li>
                         <label for="rrn1">주민등록번호<strong> *</strong></label>
-                        <input type="text" id="rrn1" placeholder="앞 6자리" maxlength="6" style="width: 120px; border: 3px solid #2d3a4b; border-radius: 7px;" required> - <input type="password" id="rrn2" placeholder="뒷 7자리" maxlength="7" style="width: 120px; border: 3px solid #2d3a4b; border-radius: 7px;" required><hr>
+                        <input class="form-control" type="text" id="rrn1" placeholder="앞 6자리" maxlength="6" style="width: 120px; border-radius: 7px;" required> - 
+                        <input class="form-control" type="password" id="rrn2" placeholder="뒷 7자리" maxlength="7" style="width: 120px; border-radius: 7px;" required><hr>
                     </li>
                         <label for="date">생년월일<strong> *</strong></label>
-                        <input type="date" id="date" style="width: 200px; border: 3px solid #2d3a4b; border-radius: 7px;" required><hr>
+                        <input class="form-control" type="date" id="date" style="width: 150px; border-radius: 7px;" required><hr>
                     </li>
                     <div>
-                        <p style="color: blue;"><input type="checkbox" required> 만 14세 이상입니다. (필수)</p>
-                        <p style="color: gray;">회원가입에 필요한 최소한의 정보만 입력 받음으로써, 고객님의 개인정보 수집을 최소화하고 편리한 회원가입을 제공합니다.</p>
+                        <p class="agch"><input type="checkbox" required> 만 14세 이상입니다. (필수)</p>
+                        <p class="agtx">회원가입에 필요한 최소한의 정보만 입력 받음으로써, 고객님의 개인정보 수집을 최소화하고 편리한 회원가입을 제공합니다.</p>
                     </div>
                     <li>
                         <label for="ph">전화번호<strong> *</strong></label>
-                        <select style="height: 27px; font-family: 'Noto Sans KR', sans-serif;" required>
+                        <select class="form-control" style="height: 35px; font-family: 'Noto Sans KR', sans-serif; width: 80px;" required>
                             <option>선택안함</option>
                             <option selected>010</option>
                             <option>011</option>
@@ -82,26 +121,28 @@
                             <option>017</option>
                             <option>070</option>
                         </select> - 
-                            <input type="tel" placeholder="0000-0000형식으로 입력" id="ph" pattern="\d{3,4}-\d{4}" title="휴대폰번호는 0000-0000형식으로 입력해주세요." style="width: 170px;"> <input type="button" value="인증" class="button">
+                            <input class="form-control" type="tel" placeholder="7,8자리 입력" id="ph" pattern="\d{3,4}-\d{4}" title="7,8자리로 입력해주세요." style="width: 150px;">
+                            <input class="btn btn-primary" type="button" value="인증" class="button">
                     </li>
                     <li>
                         <label for="phctfc"></label>
-                        <input type="text" placeholder="인증번호 6자리" id="phctfc" maxlength="6" style="width: 150px; height: 26px;"> <input type="button" name="phctfc" class="button" value="인증받기" required><hr>
+                        <input class="form-control" type="text" placeholder="인증번호 6자리" id="phctfc" maxlength="6" style="width: 150px;">
+                        <input class="btn btn-success" type="button" name="phctfc" class="button" value="인증받기" required><hr>
                     </li>
                     <li>
                         <label for="id">아이디<strong> *</strong></label>
-                        <input type="text" id="id" placeholder="아이디" maxlength="16" required><span> (영문소문자/숫자, 4~16자)</span><hr>
+                        <input class="form-control" type="text" id="id" placeholder="아이디" maxlength="16" required style="width: 150px;"><span> (영문소문자/숫자, 4~16자)</span><hr>
                     </li>
                     <li>
                         <label for="passwd">비밀번호<strong> *</strong></label>
-                        <input type="password" id="passwd" placeholder="비밀번호"  maxlength="16" required> <span>(영문대소문자/숫자4~16자)</span>
+                        <input class="form-control" type="password" id="passwd" placeholder="비밀번호"  maxlength="16" required style="width: 150px;"> <span>(영문대소문자/숫자4~16자)</span>
                         <label for="passwdok">비밀번호 확인</label>
-                        <input type="password" id="passwdok" placeholder="비밀번호 확인" maxlength="16" required><hr>
+                        <input class="form-control" type="password" id="passwdok" placeholder="비밀번호 확인" maxlength="16" required style="width: 150px;"><hr>
                     </li>
                     <li>
                         <label for="email">이메일<strong> *</strong></label>
-                        <input type="text"  id="email" placeholder="이메일" autocomplete="on" required><span> @ </span>
-                        <select style="height: 28px;">
+                        <input class="form-control" type="text"  id="email" placeholder="이메일" autocomplete="on" required style="width: 150px;"><span> @ </span>
+                        <select class="form-control" style="height: 35px; width: 150px;">
                             <option value="직접입력">직접입력</option>
                             <option>naver.com</option>
                             <option>daum.com</option>
@@ -110,15 +151,15 @@
                     </li>
                     <li>
                         <label for="sample6_postcode">주소<strong> *</strong></label>
-                        <input type="text" id="sample6_postcode" placeholder="우편번호" required>
-                        <input type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기" id="button" class="button"><br>
-                        <input type="text" id="sample6_address" placeholder="주소" style="margin-top: 5px" required>
-                        <input type="text" id="sample6_extraAddress" placeholder="참고항목" style="margin-top: 5px"><br>
-                        <input type="text" id="sample6_detailAddress" placeholder="상세주소" style="width: 22vw; margin-top: 5px;" required><hr>
+                        <input class="form-control" type="text" id="sample6_postcode" placeholder="우편번호" required style="width: 150px;">
+                        <input class="form-control" type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기" id="button" class="button" style="width: 120px;"><br>
+                        <input class="form-control" type="text" id="sample6_address" placeholder="주소" style="margin-top: 5px; width: 200px;" required >
+                        <input class="form-control" type="text" id="sample6_extraAddress" placeholder="참고항목" style="margin-top: 5px; width: 200px;"><br>
+                        <input class="form-control" type="text" id="sample6_detailAddress" placeholder="상세주소" style="width: 22vw; margin-top: 5px; width: 50%;" required><hr>
                     </li>
                     <li>
                         <label>이용약관 동의 <span style="color: red;">(필수)</span> <input type="checkbox" style="right: 5%;" required></label>
-                        <textarea id="textarea" cols="145vw" rows="10vw" readonly style="resize: none;">
+                        <textarea class="form-control" id="textarea" cols="145vw" rows="10vw" readonly style="resize: none;">
 제1조(목적) 이 약관은 Y shirt S가 운영하는 업체 사이버 몰(이하 “몰”이라 한다)에서 제공하는 인터넷 관련 서비스(이하 “서비스”라 한다)를 이용함에 있어 사이버 몰과 이용자의 권리․의무 및 책임사항을 규정함을 목적으로 합니다.
 ※「PC통신, 무선 등을 이용하는 전자상거래에 대해서도 그 성질에 반하지 않는 한 이 약관을 준용합니다.」
 제2조(정의)
@@ -257,13 +298,9 @@
                     </li>
                     <li>
                         <p>광고성 정보 수신 (선택)</p>
-                        <table style="border-collapse: collapse; width: 100%;  text-align: center;">
-                            <colgroup>
-                                <col>
-                                <col>
-                            </colgroup>
+                        <table class="table-bordered">
                             <thead>
-                                <tr style="height: 50px;">
+                                <tr>
                                     <th>수신</th>
                                     <th>목적</th>
                                     <th>항목</th>
@@ -271,14 +308,14 @@
                                     <th>동의</th>
                                 </tr>
                             </thead>
-                                <tr style="height: 80px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                                <tr>
                                     <th>이메일</th>
                                     <td>마케팅 및 광고 활용을 위한 정보 수신 동의</td>
                                     <td>이메일</td>
                                     <td>철회 후 즉시</td>
                                     <td><input type="checkbox"></td>
                                 </tr>
-                                <tr style="height: 80px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+                                <tr>
                                     <th>SMS</th>
                                     <td>마케팅 및 광고 활용을 위한 정보 수신 동의</td>
                                     <td>휴대폰</td>
@@ -289,31 +326,37 @@
                         <hr>
                         <li class="icon">
                             <p>다른방법으로 로그인</p>
-                            <a href="#"><img src="../resources/images/naver.png" alt="네이버"></a>
-                            <a href="#"><img src="../resources/images/kakaotalk.jpg" alt="카카오톡"></a>
-                            <a href="#"><img src="../resources/images/facebook.png" alt="페이스북"></a>
-                            <a href="#"><img src="../resources/images/apple.png" alt="애플"></a>
+                            <!-- 다른방법으로 로그인 이미지 svg적용 -->
+                            <a href="#"><img src="../resources/images/yys_naver_icon.svg" alt="네이버"></a><!-- svg파일 안에서 circle색깔 limegreen적용-->
+                            <a href="#"><img src="../resources/images/yys_kakaotalk_icon.svg" alt="카카오톡"></a>
+                            <a href="#"><img src="../resources/images/yys_apple_icon.svg" alt="애플"></a>
+                            <a href="#"><img src="../resources/images/yys_twitter_icon.svg" alt="트위터"></a>
+                            <a href="#"><img src="../resources/images/yys_facebook_icon.svg" alt="페이스북"></a>
                             <hr>
                         </li>
                     </li>
-                    <li id="signup"><input type="submit" value="동의하고 회원가입"></li>
+                    <li id="signup"><input class="btn btn-primary" type="submit" value="동의하고 회원가입"></li>
                 </fieldset>
             </form>
+            <a href="#" id="top">
+                <img src="../resources/images/yys_top_icon.svg" alt="맨위로">
+            </a>
         </div>
-        <footer>
-            <p><strong>(주) Y shirt S</strong> | CEO : <strong>황태용</strong>
-            | 사업자등록번호:432-12-43265 | 개인정보 관리책임자: <strong>황태용</strong> : (hty20221111@gmail.com) <br>
-            &copy; 2022 Y shirt S |  ALL RIGHTS RESERVED. 
-            <a href="#"> 개인정보 처리방침 |</a>
-            <a href="#"> 이용약관 |</a>
-            고객센터 : 000-0000-0000 | 주소 : 서울특별시 구로구 구로동 살기좋은동네<br>
-            고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 PG사의 구매안전 서비스를 이용하실 수 있습니다.</p>
-            <li><a href="#">고객센터 |</a></li>
-            <li><a href="#">개인정보처리방침 |</a></li>
-            <li><a href="#">1:1문의 |</a></li>
-            <li><a href="#">이용약관</a></li>
-        </ul>
-    </footer>
-</div>
+        <footer class="hidden-xs">
+                <p><strong>(주) Y shirt S</strong> | CEO : <strong>황태용</strong>
+                | 사업자등록번호:432-12-43265 | 개인정보 관리책임자: <strong>황태용</strong> : (hty20221111@gmail.com) <br>
+                &copy; 2022 Y shirt S |  ALL RIGHTS RESERVED. 
+                <a href="#"> 개인정보 처리방침 |</a>
+                <a href="#"> 이용약관 |</a>
+                고객센터 : 000-0000-0000 | 주소 : 서울특별시 구로구 구로동 살기좋은동네<br>
+                고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 PG사의 구매안전 서비스를 이용하실 수 있습니다.</p>
+                <ul>
+                    <li><a href="#">고객센터 |</a></li>
+                    <li><a href="#">개인정보처리방침 |</a></li>
+                    <li><a href="#">1:1문의 |</a></li>
+                    <li><a href="#">이용약관</a></li>
+                </ul>
+        </footer>
+    </div>
 </body>
 </html>

@@ -1,0 +1,390 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'MonoplexKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_Monoplex-kr@1.0/MonoplexKR-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+*{
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+hr{
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+header{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #2d3a4b !important;
+}
+.logo{
+    float: left;
+    margin-left: 50px;
+}
+.logo img{
+    height: 95px;
+}
+.top_menu{
+    float: right;
+    width: 280px;
+    line-height: 40px;
+    color: #fff;
+    position: absolute;
+    right: 40px;
+}
+.top_menu li{
+    display: inline;
+    margin: 0 5px;
+}
+.top_menu a{
+    color: #fff;
+    margin-left: 10px;
+    font-size: 14px;
+    font-family: "맑은 고딕";
+}
+.top_menu a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+.hbg{
+    display: none;
+    position: absolute;
+    right: 0%;
+    margin-top: 10px !important;
+    margin-right: 15px !important;
+}
+.search{
+    position: absolute;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    opacity: 1;
+}
+.search img{
+    position: absolute;
+    width: 25px;
+    height: 29px;
+    right: 10px;
+    top: 13px;
+    border-left: 1px solid rgba(0, 0, 0, 0.5);
+}
+.search img:hover{
+    cursor: pointer;
+}
+.search1{
+    height: 27px;
+    border-radius: 10px;
+    width: 50px;
+    color: #000;
+}
+nav{
+    display: inline-block !important;
+    position: absolute !important;
+    right: 0% !important;
+    top: 50% !important;
+    font-size: 18px !important;
+    color: #fff !important;
+}
+nav li{
+    display: inline !important;
+    margin: 0 10px !important;
+}
+nav li a{
+    color: #fff;
+    background: none !important;
+    transition: .2s;
+}
+nav li a:hover{
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transform: scale(1.1);
+}
+.center{
+    position: relative;
+    margin: 0 !important;
+    width: 100%;
+    height: 2300px;
+}
+.LOCATION .fas{
+    font-size: 50px;
+}
+#map{
+    width:100%;
+    height:550px;
+    background: red
+}
+.LOCATION{
+    width: 80%;
+    height: 900px;
+    padding: 50px;
+    border-bottom: 3px solid lightgray;
+}
+.INFORMATION{
+    width: 80%;
+    height: 550px;
+    padding: 50px;
+    border-bottom: 3px solid lightgray;
+}
+.sbs{
+    width: 80%;
+    height: 700px;
+    padding: 50px;
+}
+.sbs svg{
+    width: 90px;
+    height: 90px;
+}
+.firstsbs{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 300px;
+}
+.secondsbs{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 300px;
+}
+.subway{
+    width: 50%;
+    float: left;
+}
+.bus{
+    width: 50%;
+    float: right;
+}
+.navigation{
+    clear: both;
+    float: left;
+    width: 50%;
+}
+.park{
+    float: right;
+    width: 50%;
+}
+footer{
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    background-color: #e6e6e6;
+}
+footer p{
+    text-align: center;
+    font-size: 10px;
+    padding-top: 20px;
+    line-height: 20px;
+}
+footer p a{
+    color: #000;
+}
+footer p a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.ftlist{
+    margin-right: 10px;
+    width: 280px;
+    height: 25px;
+}
+footer li{
+    display: inline;
+    float: right;
+    margin-right: 10px;
+}
+footer li a{
+    font-size: 10px;
+    font-family: "맑은 고딕";
+    color: #000;
+}
+footer li a:hover{text-decoration: underline;}
+@media (min-width: 768px)  and (max-width: 1199px){
+    *{
+        margin: 0 auto;
+        padding: 0;
+    }
+    header{
+        height: 70px;
+    }
+    nav{
+        top: 40% !important;
+    }
+    .logo img{
+        height: 70px;
+    }
+    .top_menu{
+        font-size: 10px !important;
+        position: absolute;
+    }
+    .top_menu ul{
+        right: 0;
+        margin-left: 50px;
+    }
+    .top_menu a{
+        font-size: 12px;
+        float: left;
+    }
+    nav > ul{
+        font-size: 14px;
+    }
+    nav > ul> li{
+        margin: 0 !important;
+    }
+    nav > ul > a{
+        margin: 10px;
+    }
+    nav li a:hover{
+        font-size: 14px;
+    }
+    .search2{
+        width: 40px;
+        height: 25px;
+        border-radius: 10px;
+        border: none;
+        font-size: 14px;
+        margin-top: 12px;
+        margin-left: 5px;
+        background: #656e7a;
+    }
+    .LOCATION .fas{
+        font-size: 40px;
+    }
+    .LOCATION{
+        height: 700px;
+    }
+    .LOCATION h1{
+        font-size: 30px;
+    }
+    .INFORMATION h2{
+        font-size: 25px;
+    }
+    #map{
+        height: 400px;
+    }
+    .sbs svg{
+        width: 60px;
+        height: 60px;
+    }
+    .sbs h2{
+        font-size: 20px;
+    }
+ }
+@media (max-width: 767px) {
+    *{
+        margin: 0 auto;
+        padding: 0;
+    }
+    header{
+        height: 50px;
+        border: none !important;
+    }
+    .logo{
+        height: 50px;
+    }
+    .logo a img{
+        width: 100px;
+        height: 50px !important;
+        margin-left: -30px;
+    }
+    .top_menu{
+        margin-right: -40px;
+        color: #2d3a4b;
+    }
+    .top_menu ul{
+        width: 300px;
+        margin-right: 20px;
+    }
+    .top_menu a{
+        font-size: 12px;
+        margin-left: 5px;
+        line-height: 50px;
+    }
+    nav li a{
+        background-color: none !important;
+        font-size: 12px;
+    }
+    nav{
+        color: #2d3a4be9;
+        background: #2d3a4be9;
+        border-radius: 0 0 10px 10px;
+        z-index: 10;
+        width: 150px;
+        overflow-x: hidden !important;
+        line-height: 0px !important;
+        margin-top: 15px;
+        border: none !important;
+    }
+    nav li a:hover{
+        font-size: 13px;
+        margin-left: 10px;
+        font-weight: normal;
+    }
+    .search img{
+        width: 20px;
+        height: 15px;
+        top: 35px;
+        right: -120px;
+    }
+    .search1{
+        position: relative;
+        height: 20px !important;
+        font-size: 8px;
+        margin-left: 10px;
+        width: 132px !important;
+        margin-top: 10px !important;
+        margin-bottom: 5px !important;
+    
+    }
+    .hbg{
+        background: none !important;
+        border: none !important;
+        color: #fff !important;
+    }
+    .LOCATION .fas{
+        font-size: 30px;
+    }
+    .center{
+        height: 1700px;
+    }
+    .LOCATION{
+        height: 550px;
+    }
+    .LOCATION h1{
+        font-size: 25px;
+    }
+    .INFORMATION{
+        height: 450px;
+    }
+    .INFORMATION h2{
+        font-size: 20px !important;
+    }
+    .INFORMATION h3{
+        font-size: 15px;
+    }
+    #map{
+        height: 300px;
+    }
+    .sbs svg{
+        width: 40px;
+        height: 40px;
+    }
+    .sbs h2{
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Y_shirt_s_login.css">
+    <title>Y shirt S Join</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap_v3_3_2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="../javascript/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.js"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="../javascript/Y_shirt_s_join.js"></script>
+</head>
+<body>
+    <div id="page">
+        <header>
+            <div class="logo">
+                <a href="Y shirt S.html" title="Y shirt S"><img src="../resources/images/Y_shirt_S2.png" alt="Y shirt S"></a>
+            </div>
+            <div class="top_menu">
+                <ul>
+                    <li><a href="Y shirt S.html" title="홈">홈</a></li>
+                    <li><a href="Y shirt S_FAQ.html" title="게시판">게시판</a></li>
+                    <li><a href="Y shirt S_login.html" title="로그인">로그인</a></li>
+                    <li><a href="Y shirt S_join.html" title="회원가입">회원가입</a></li>
+                </ul>
+            </div>
+            <a href="#">
+                <!-- fontawesom 사용 -->
+                <!-- bootstrap 사용하여 큰화면 데스크탑 화면에서 보이지 않도록 hidden-lg적용 -->
+                <!-- 뷰포트가 좁을 때 nav가 보여지지 않도록 navbar-toggle collapsed적용 -->
+                <!-- 뷰포트가 좁을 때 처음 #bsnavidar가 숨겨질 수 있도록 data-toggle="collapse"을 적용, fontawesom 이미지가 클릭했을 때 data-target의 메뉴가 toggle할 수 있도록 id값을 알맞게 설정 -->
+                <i class="fas fa-bars visible-xs hbg navbar-toggle collapsed" data-toggle="collapse" data-target="#bsnavibar"></i>
+            </a>
+            <!-- id값을 동일하게 bsnavibar 적용 -->
+            <nav class="collapse navbar-collapse visible-xs" id="bsnavibar">
+                <ul class="nav navbar-nav">
+                    <li class="active text-capitalize"><a href="#" title="Best">best</a></li>
+                    <li class="active text-capitalize"><a href="#" title="상의">shirts</a></li>
+                    <li class="active text-capitalize"><a href="#" title="하의">bottom</a></li>
+                    <li class="active text-capitalize"><a href="#" title="자켓">outer</a></li>
+                    <li class="active text-capitalize"><a href="#" title="신발">shoes</a></li>
+                    <li class="active text-capitalize"><a href="Y shirt S_LOCATION.html" title="찾아오시는 길">LOCATION</a></li>
+                    <li class="active text-capitalize"><a href="#" title="고객센터">c/s</a></li>
+                    <li class="search">
+                        <input class="search1 visible-lg visible-xs form-control" type="search" title="검색어입력" placeholder="검색">
+                        <img class="visible-lg visible-xs" src="../resources/images/yys_search_icon.svg" alt="검색아이콘">
+                    </li>
+                    <li>
+                        <input class="search2 visible-sm visible-md" type="button" value="검색" title="검색" data-toggle="modal" data-target="#myModal">    
+                    </li>
+                </ul>
+            </nav>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">검색어를 입력해주세요</h4>
+                    </div>
+                    <div class="modal-body">
+                    <input class="form-control" type="text" placeholder="검색어입력">
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                    <button type="button" class="btn btn-primary">검색</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </header>
+        <div class="join">
+        <div class="login">
+            <div class="col-md-4 col-md-offset-4 loginform">
+                <div class="panel panel-default">
+                  <div class="panel-heading">로그인</div>
+                  <div class="panel-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="id">아이디</label>
+                        <input type="text" class="form-control" id="id" placeholder="아이디를 입력하세요">
+                      </div>
+                        <div class="form-group">
+                         <label for="pw">암호</label>
+                          <input type="password" class="form-control" id="pw" placeholder="암호">
+                        </div>
+                      </form>
+                      <button type="button" class="btn btn-success btn-lg btn-block">로그인</button>
+                      <button type="button" class="btn btn-default btn-lg btn-block back">취소</button>
+                      <button type="button" class="btn btn-success btn-lg idfg">아이디찾기</button>
+                      <button type="button" class="btn btn-default btn-lg pwfg">비밀번호 찾기</button>
+                      <br>
+                      <button type="button" class="btn btn-primary btn-lg btn-block">
+                        <i class="fab fa-facebook"></i> 페이스북 로그인</button>
+                      </div>
+                  </div>
+                </div>
+           </div>
+            <a href="#" id="top">
+                <img src="../resources/images/yys_top_icon.svg" alt="맨위로">
+            </a>
+        </div>
+        <footer class="hidden-xs">
+                <p><strong>(주) Y shirt S</strong> | CEO : <strong>황태용</strong>
+                | 사업자등록번호:432-12-43265 | 개인정보 관리책임자: <strong>황태용</strong> : (hty20221111@gmail.com) <br>
+                &copy; 2022 Y shirt S |  ALL RIGHTS RESERVED. 
+                <a href="#"> 개인정보 처리방침 |</a>
+                <a href="#"> 이용약관 |</a>
+                고객센터 : 000-0000-0000 | 주소 : 서울특별시 구로구 구로동 살기좋은동네<br>
+                고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 PG사의 구매안전 서비스를 이용하실 수 있습니다.</p>
+                <ul>
+                    <li><a href="#">고객센터 |</a></li>
+                    <li><a href="#">개인정보처리방침 |</a></li>
+                    <li><a href="#">1:1문의 |</a></li>
+                    <li><a href="#">이용약관</a></li>
+                </ul>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,24 +17,29 @@
     <link rel="stylesheet" href="../css/jquery.bxslider.css">
     <script src="../javascript/jquery.bxslider.min.js"></script>
 </head>
+
 <body>
     <div id="page">
         <header class="navbar navbar-inverse">
             <div class="logo">
-                <a href="Y shirt S.html" title="Y shirt S"><img src="../resources/images/Y_shirt_S2.png" alt="Y shirt S"style="height: 94px;"></a>
+                <a href="Y shirt S.html" title="Y shirt S"><img src="../resources/images/Y_shirt_S2.png" alt="Y shirt S"
+                        style="height: 94px;"></a>
             </div>
             <div class="top_menu">
-                <a href="#" title="홈">홈</a>
-                <a href="#" title="게시판">게시판</a>
-                <a href="#" title="로그인">로그인</a>
-                <a href="#" title="회원가입">회원가입</a>
+                <ul>
+                    <a href="#" title="홈">홈</a>
+                    <a href="#" title="게시판">게시판</a>
+                    <a href="#" title="로그인">로그인</a>
+                    <a href="#" title="회원가입">회원가입</a>
+                </ul>
             </div>
             <a href="#">
                 <!-- fontawesom 사용 -->
                 <!-- bootstrap 사용하여 큰화면 데스크탑 화면에서 보이지 않도록 hidden-lg적용 -->
                 <!-- 뷰포트가 좁을 때 nav가 보여지지 않도록 navbar-toggle collapsed적용 -->
                 <!-- 뷰포트가 좁을 때 처음 #bsnavidar가 숨겨질 수 있도록 data-toggle="collapse"을 적용, fontawesom 이미지가 클릭했을 때 data-target의 메뉴가 toggle할 수 있도록 id값을 알맞게 설정 -->
-                <i class="fas fa-bars visible-xs hbg navbar-toggle collapsed" data-toggle="collapse" data-target="#bsnavibar"></i>
+                <i class="fas fa-bars visible-xs hbg navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bsnavibar"></i>
             </a>
             <!-- id값을 동일하게 bsnavibar 적용 -->
             <nav class="collapse navbar-collapse visible-xs" id="bsnavibar">
@@ -46,36 +52,52 @@
                     <li class="active text-capitalize"><a href="#" title="악세사리">acc</a></li>
                     <li class="active text-capitalize"><a href="#" title="고객센터">c/s</a></li>
                     <li class="search">
-                        <input class="search1 visible-lg visible-xs form-control" type="search" title="검색어입력" placeholder="검색">
+                        <input class="search1 visible-lg visible-xs form-control" type="search" title="검색어입력"
+                            placeholder="검색">
                         <img class="visible-lg visible-xs" src="../resources/images/yys_search_icon.svg" alt="검색아이콘">
                     </li>
                     <li>
-                        <input class="search2 visible-sm visible-md" type="button" value="검색" title="검색" data-toggle="modal" data-target="#myModal">    
+                        <input class="search2 visible-sm visible-md" type="button" value="검색" title="검색"
+                            data-toggle="modal" data-target="#myModal">
                     </li>
                 </ul>
             </nav>
             <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">검색어를 입력해주세요</h4>
-                    </div>
-                    <div class="modal-body">
-                    <input class="form-control" type="text" placeholder="검색어입력">
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
-                    <button type="button" class="btn btn-primary">검색</button>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">검색어를 입력해주세요</h4>
+                        </div>
+                        <div class="modal-body">
+                            <input class="form-control" type="text" placeholder="검색어입력">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+                            <button type="button" class="btn btn-primary">검색</button>
+                        </div>
                     </div>
                 </div>
-                </div>
+            </div>
+            <div id="cookie">
+                <img src="../resources/images/yys_cookie.jpg" alt="cookie" width="1000px" height="500px">
+                <p class="closeWrap">
+                    <input type="checkbox" name="expiresChk" id="expiresChk">
+                    <label for="expiresChk">오늘 하루 이 창 열지 않기</label>
+                    <button class="closeBtn">닫기</button>
+                </p>
             </div>
         </header>
     </div>
     <div class="box">
-        <p title="Welcome Y shirt S !">Welcome Y shirt S !</p>
+        <div id="pic1" class="bg-holder palx" data-width="1024" data-height="768">
+            <p class="palxtext"><?xml version="1.0" ?><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g><path d="M0 0h24v24H0z" fill="none"/><path d="M7 4v7l5-2.5 5 2.5V4h3a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3zm5 4L7.5 3h9L12 8zm1 3.236l-1-.5-1 .5V20h2v-8.764zM15 14v2h4v-2h-4z" fill="white"/></g></svg>Welcome Y_shirt_S</p>
+        </div>
+    </div>
+    <div>
         <div class="owl-carousel owl-theme" id="wrapper">
             <div class="item">
                 <img src="../resources/images/yys_owl1.jpg" alt="이미지1" width="500px" height="500px">
@@ -95,7 +117,7 @@
             <div class="item">
                 <img src="../resources/images/yys_owl6.jpg" alt="이미지1" width="500px" height="500px">
             </div>
-        </div>       
+        </div>
     </div>
     <div class="market">
         <div class="market_list">
@@ -110,95 +132,372 @@
             </li>
         </div>
     </div>
-    <div class="center">
-        <div class="best1">
-            <li>
-                <a href="#"><img src="../resources/images/yys_best1.jpg" alt="이미지1" width="100%"></a>
-            </li>
+    <div class="banner">
+        <div class="banner1">
+            <div class="cody">
+                <a href="#"><img src="../resources/images/yys_CODY1.jpg" alt="CODY">
+                    <p>CODY</p>
+                </a>
+            </div>
+            <div class="best">
+                <a href="#"><img src="../resources/images/yys_cody.jpg" alt="Best">
+                    <p>BEST</p>
+                </a>
+            </div>
         </div>
-        <div class="best2">
-            <li>
-                <a href="#"><img src="../resources/images/yys_best2.jpg" alt="이미지2" width="100%"></a>
-            </li>
-        </div>
-        <div class="best3">
-            <li>
-                <a href="#"><img src="../resources/images/yys_best3.jpg" alt="이미지3" width="100%"></a>
-            </li>
-        </div>
-        <div class="notice">
-            <ul>
-                <li class="notice_title">
-                    <h4> notice <small>공지사항</small></h4>
-                </li>
-                <div >
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th>1</th>
-                                <td><a href="#"> ■ 크리스마스 이벤트</a><span>2022.12.25</span></td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>2</th>
-                                <td><a href="#">■ 할인행사 </a><span>2022.12.27</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </ul>
+        <div class="banner2">
+            <div class="event1">
+                <a href="#"><img src="../resources/images/yys_event1.jpg" alt=""></a>
+            </div>
+            <div class="event2">
+                <a href="#"><img src="../resources/images/yys_event2.jpg" alt=""></a>
+            </div>
+            <div class="event3">
+                <a href="#"><img src="../resources/images/yys_event4.jpg" alt=""></a>
+            </div>
+            <div class="event4">
+                <a href="#"><img src="../resources/images/yys_event3.jpg" alt=""></a>
+            </div>
         </div>
     </div>
+    <div class="stlist">
+        <p title="WEEKLY BEST">WEEKLY BEST</p>
+        <li>
+            <a href="#"><img src="../../resources/images/yys_소라색 오버핏 셔츠.jpg" alt="옷이미지">
+                <div class="text">
+                    <p>소라색 오버핏 셔츠<br><strong>34,900원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_차이나식 와이셔츠.jfif" alt="옷이미지">
+                <div class="text">
+                    <p>차이나식 와이셔츠<br><strong>18.750원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_엘티아 옥스퍼드 셔츠.jpg" alt="옷이미지">
+                <div class="text">
+                    <p>엘티아 옥스퍼드 셔츠 <br><strong>28,000원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_데일리 긴팔 셔츠.jpg" alt="옷이미지">
+                <div class="text">
+                    <p>데일리 긴팔 셔츠<br><strong>29,900원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_소프트 워싱 박스 셔츠.jpg" alt="옷이미지">
+                <div class="text">
+                    <p>소프트 워싱 박스 셔츠<br><strong>42,500원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_데일리 히든셔츠.jfif" alt="옷이미지">
+                <div class="text">
+                    <p>데일리 히든셔츠<br><strong>24,900원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_베이직 드레스 남자셔츠.jpg" alt="옷이미지">
+                <div class="text">
+                    <p>베이직 드레스 남자셔츠<br><strong>25,800원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_타임 시어서커 스트라이프 셔츠.jpg" alt="옷이미지">
+                <div class="text">
+                    <p>타임 시어서커 스트라이프 셔츠<br><strong> 34,000원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_검정색 기본셔츠.jpg" alt="옷이미지">
+                <div class="text">
+                    <p>검정색 기본셔츠<br><strong>29,800원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_폴리셔츠 넥타이세트.jpg" alt="옷이미지">
+                <div class="text">
+                    <p>폴리셔츠 넥타이세트 <br><strong>19,700원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_포켓 오버핏 베이지 셔츠.PNG" alt="옷이미지">
+                <div class="text">
+                    <p>포켓 오버핏 베이지 셔츠<br><strong>39,000원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_포켓 구김없는 기본셔츠.jpg" alt="옷이미지">
+                <div class="text">
+                    <p>포켓 구김없는 기본셔츠<br><strong>29,800원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_화이트블랙 린넨 셔츠 셋업.jpg" alt="옷이미지">
+                <div class="text">
+                    <p>화이트블랙 린넨 셔츠 셋업<br><strong>77,000원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_정장용 버건디 셔츠 슬림핏.jfif" alt="옷이미지">
+                <div class="text">
+                    <p>정장용 버건디 셔츠 슬림핏<br><strong>22,500원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_스캇 오버핏 셔츠.jpg" alt="옷이미지">
+                <div class="text">
+                    <p>스캇 오버핏 셔츠<br><strong>29,000원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_반팔 스트라이프 오버핏 셔츠.jpg" alt="옷이미지">
+                <div class="text">
+                    <p>반팔 스트라이프 오버핏 셔츠<br><strong>32,000원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_마린 오버핏 셔츠.jpeg" alt="옷이미지">
+                <div class="text">
+                    <p>마린 오버핏 셔츠<br><strong>26,000원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_퍼펙트 오버핏 셔츠.jpg" alt="옷이미지">
+                <div class="text">
+                    <p>퍼펙트 오버핏 셔츠<br><strong>22,400원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_선 바이오 오버핏 셔츠.jpg" alt="옷이미지">
+                <div class="text">
+                    <p>선 바이오 오버핏 셔츠<br><strong>35,000원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_빅카라 언발 오버핏 셔츠.jpg" alt="옷이미지">
+                <div class="text">
+                    <p>빅카라 언발 오버핏 셔츠<br><strong>18,800원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li><a href="#"><img src="../resources/images/yys_스티치 오버핏 셔츠.jpg" alt="옷이미지">
+                <div class="text">
+                    <p>스티치 오버핏 셔츠<br><strong>29,000원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_오버핏 스트라이프 셔츠.jpg" alt="옷이미지">
+                <div class="text">
+                    <p>오버핏 스트라이프 셔츠<br><strong>19,800원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_릴렉스 세미오버핏 셔츠.jpg" alt="옷이미지">
+                <div class="text">
+                    <p>릴렉스 세미오버핏 셔츠<br><strong>19,000원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_폴리 노카라 오버핏 셔츠.jpg" alt="옷이미지">
+                <div class="text">
+                    <p>폴리 노카라 오버핏 셔츠<br><strong>19,000원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_세미오버핏 셔츠 자켓.jpg" alt="옷이미지">
+                <div class="text">
+                    <p>세미오버핏 셔츠 자켓<br><strong>46,000원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_투포켓 크롭 셔츠.jpg" alt="옷이미지">
+                <div class="text">
+                    <p>투포켓 크롭 셔츠<br><strong>37,000원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_오버핏 밴드 셔츠(넥타이 포함).jpg" alt="옷이미지">
+                <div class="text">
+                    <p>오버핏 밴드 셔츠(넥타이 포함)<br><strong>26,700원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_와이드 스트라이프 오버핏 셔츠.jfif" alt="옷이미지">
+                <div class="text">
+                    <p>와이드 스트라이프 오버핏 셔츠<br><strong>25,500원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_린넨 오버핏 셔츠.jpg" alt="옷이미지">
+                <div class="text">
+                    <p>린넨 오버핏 셔츠<br><strong>29,800원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_오버핏 타이셔츠 카라넥 루즈핏.png" alt="옷이미지">
+                <div class="text">
+                    <p>오버핏 타이셔츠 카라넷 루즈핏<br><strong>42,800원</strong></p>
+                </div>
+            </a>
+        </li>
+        <h1><small>반집업 니트</small></h1>
+        <hr>
+        <li>
+            <a href="#"><img src="../resources/images/yys_반집업 니트(블랙).jpg" alt="옷이미지">
+                <div class="text">
+                    <p>반집업 니트(블랙)<br><strong>24,500원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_버젠 반집업 니트(베이지).jpg" alt="옷이미지">
+                <div class="text">
+                    <p>버젠 반집업 니트(베이지)<br><strong>34,000원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_뉴트럴 반집업 니트.jpg" alt="옷이미지">
+                <div class="text">
+                    <p>뉴트럴 반집업 니트<br><strong>34,000원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_반집업 니트(네이비).jpg" alt="옷이미지">
+                <div class="text">
+                    <p>반집업 니트(네이비)<br><strong>34,000원</strong></p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="#"><img src="../resources/images/yys_반집업 니트(그레이).jpg" alt="옷이미지">
+                <div class="text">
+                    <p>반집업 니트(그레이)<br><strong>34,000원</strong></p>
+                </div>
+            </a>
+        </li>
+    </div>
+
     <footer>
         <div class="ft_text">
             <p><strong>(주) Y shirt S</strong> | CEO : <strong>황태용</strong>
-            | 사업자등록번호:432-12-43265 | 개인정보 관리책임자: <strong>황태용</strong> : (hty20221105@gmail.com) <br>
-            &copy; 2022 Y shirt S |  ALL RIGHTS RESERVED. 
-            <a href="#"> 개인정보 처리방침 |</a>
-            <a href="#"> 이용약관 |</a>
-             고객센터 : 000-0000-0000 | 주소 : 서울특별시 구로구 구로동 살기좋은동네<br>
-            고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한 
-            PG사의 구매안전 서비스를 이용하실 수 있습니다.</p>
+                | 사업자등록번호:432-12-43265 | 개인정보 관리책임자: <strong>황태용</strong> : (hty20221105@gmail.com) <br>
+                &copy; 2022 Y shirt S | ALL RIGHTS RESERVED.
+                <a href="#"> 개인정보 처리방침 |</a>
+                <a href="#"> 이용약관 |</a>
+                고객센터 : 000-0000-0000 | 주소 : 서울특별시 구로구 구로동 살기좋은동네<br>
+                고객님은 안전거래를 위해 현금 등으로 결제시 저희 쇼핑몰에서 가입한
+                PG사의 구매안전 서비스를 이용하실 수 있습니다.
+            </p>
         </div>
-            <ul>
-                <li><a href="#">고객센터 |</a></li>
-                <li><a href="#">개인정보처리방침 |</a></li>
-                <li><a href="#">1:1문의 |</a></li>
-                <li><a href="#">이용약관</a></li>
-            </ul>
+        <ul>
+            <li><a href="#">고객센터 |</a></li>
+            <li><a href="#">개인정보처리방침 |</a></li>
+            <li><a href="#">1:1문의 |</a></li>
+            <li><a href="#">이용약관</a></li>
+        </ul>
     </footer>
+    <script src="../javascript/Y_shirt_S.js"></script>
     <script src="../javascript/owl.carousel.js"></script>
     <script src="../javascript/owl.autoplay.js"></script>
     <script src="../javascript/owl.navigation.js"></script>
-    <script>
-         $(function(){
-            var owl = $('.owl-carousel');
-                owl.owlCarousel({
-                    items : 3, //  화면에 보여질 item 개수
-                    loop : true,    // 반복 여부 
-                    margin : 20,    // 사진간의 간격
-                    autoplay : true,    // 자동 재생
-                    autoplayTimeout : 3000, // 자동 재생 시간 (2000ms = 2s, 2000밀리초 = 2초)
-                    autoplayHoverPause : true, // 재생화면 위로 마우스를 올리면 멈춤
-                    nav: true, // nav버튼 활성화
-                    navText : ['이전','다음'], // navText 표현 지정
-                });
-                $('.play').on('click',function(){
-                    owl.trigger('play.owl.autoplay',[3000])
-                })
-                $('.stop').on('click',function(){
-                    owl.trigger('stop.owl.autoplay')
-                })
+    <script src="../javascript/jquery.parallax-scroll.min.js"></script>
+    <script src="../javascript/jquery.cookie.js"></script>
 
-                $('.market_list').bxSlider({
-                    auto: true,// 자동재생
-                    speed:500,  // 사진 전환 속도 설정(500 = 500ms = 0.5s = 0.5초)
-                    stopAutoOnClick: true,  // 애니메이션 유지 시간(1000 = 1000ms = 1s = 1초) 
-                    pager: true, // 이전(<), 다음(>) 버튼을 누르면 슬라이드가 정지됨
-                    slideWidth: 1200, // 페이지의 width(폭) 1200px
-                });
-            }); 
+    <script>
+        <!-- End Channel Plugin -->
+        $(function () {
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
+                items: 3, //  화면에 보여질 item 개수
+                loop: true,    // 반복 여부
+                margin: 20,    // 사진간의 간격
+                autoplay: true,    // 자동 재생
+                autoplayTimeout: 3000, // 자동 재생 시간 (2000ms = 2s, 2000밀리초 = 2초)
+                autoplayHoverPause: true, // 재생화면 위로 마우스를 올리면 멈춤
+                nav: true, // nav버튼 활성화
+                navText: ['이전', '다음'], // navText 표현 지정
+            });
+            $('.play').on('click', function () {
+                owl.trigger('play.owl.autoplay', [3000])
+            })
+            $('.stop').on('click', function () {
+                owl.trigger('stop.owl.autoplay')
+            })
+            $('.market_list').bxSlider({
+                auto: true,// 자동재생
+                speed: 500,  // 사진 전환 속도 설정(500 = 500ms = 0.5s = 0.5초)
+                stopAutoOnClick: true,  // 이전(<), 다음(>) 버튼을 누르면 슬라이드가 정지됨
+                pager: true, // 현재 위치 페이징 표시 여부
+                slideWidth: 2400, // 페이지의 width(폭) 2400px
+            });
+            // .palx 요소에서 parallaxScroll을 실행합니다.
+            $('.palx').parallaxScroll({
+                // parallax-Scroll플러그인의 옵션은 friction 옵션 하나뿐입니다. 이 옵션값은 0에서 1사이의 소수로 표시하는데, 0이면 배경이미지가 콘텐츠를 따라 스크롤 되고, 1이면 배경이
+                // 완전히 고정되어 콘텐츠만 스크롤 됩니다. 0과 1사이의 값을 적절히 사용하면 콘텐츠와 배경의 스크롤 속도를 다르게해서 패럴렉스 효과를 낼 수 있습니다.
+                friction: 0.5
+            });
+            // $(".palxtext").delay(1000).animate()
+            // 의미는 .palxtext에 적용된 animate() 메서드가 1000ms(1s = 1초)후에 작동함을 의미합니다.
+            // 화면의 크기가 최소 1200px 이상일때 함수를 발생시킨다.
+            if (matchMedia("screen and (min-width: 1200px)").matches) {
+                $(".palxtext").delay(1000).animate({ opacity: 0.8, top: 300 }, 600, "swing")
+                // 화면의 크기가 최소 768px 최대 1200px 이상일때 함수를 발생시킨다.
+            } else if(matchMedia("(min-width: 768px)  and (max-width: 1199px)").matches){
+                $(".palxtext").delay(1000).animate({ opacity: 0.8, top: 200 }, 600, "swing")
+                // 위의 설정이 없으면 아래의 함수를 실행시킨다
+            } else{
+                $(".palxtext").delay(1000).animate({ opacity: 0.8, top: 150 }, 600, "swing")
+            }
+        });
+        // 쿠키("popup")의 값이 'none'이면
+        // #cookie인 요소를 숨깁니다.
+        if ($.cookie('popup') == 'none') {
+            $("#cookie").hide();
+        }
+        // 'closeBtn'인 요소를 클릭하면 체크박스의 체크 유무에 따라
+        // 쿠키를 생성하여 하루동안 저장합니다.
+        var $expiresChk = $("#expiresChk");
+        $(".closeBtn").on("click", closePop);
+        function closePop() {
+            if ($expiresChk.is(":checked")) {
+                $.cookie("popup", "none", { expires: 1, path: "/" });
+            }
+            $("#cookie").fadeOut("fast");
+        }
     </script>
 </body>
+
 </html>

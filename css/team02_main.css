@@ -1,0 +1,179 @@
+    
+
+*{
+color: rgb(252, 252, 252);
+font-family: 'Noto Serif KR', serif;
+font-family: 'Ubuntu', sans-serif;
+text-align: center;}
+
+header{text-align: center;}
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.text{
+
+    display : inline-block;
+    background: rgba(6, 99, 229, 0.5);
+    width: auto; height: auto; line-height: 35px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+
+}  
+
+li {list-style-type:none;}
+
+h3{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;}
+
+
+a{
+    color: #fff;
+    font-size: 20px;
+    margin-left: 130px;
+    background-color: rgb(139, 132, 132);
+
+}
+
+
+ /*hover*/   
+.gce {
+width: 458px;
+margin: 0px auto;
+position: relative
+}
+
+.notebook2 {
+position: absolute;
+top: 0px;
+left: 0px;
+display: none;
+}
+.gce:hover .notebook2 {
+display: block;
+}
+.notebook2 {
+position: absolute;
+top: 0px;
+left: 0px;
+opacity: 0;
+transition: opacity 0.5s linear;
+}
+.gce:hover .notebook2 {
+opacity: 1;
+}
+
+
+
+.kbh {
+    
+width: 458px;
+margin: 0px auto;
+position: relative
+}
+.notebook2 {
+position: absolute;
+top: 0px;
+left: 0px;
+display: none;
+}
+.kbh:hover .notebook2 {
+display: block;
+}
+.notebook2 {
+position: absolute;
+top: 0px;
+left: 0px;
+opacity: 0;
+transition: opacity 0.5s linear;
+}
+.kbh:hover .notebook2 {
+opacity: 1;
+}
+
+
+.kmj {
+width: 458px;
+margin: 0px auto;
+position: relative
+
+}
+.notebook2 {
+position: absolute;
+top: 0px;
+left: 0px;
+display: none;
+}
+.kmj:hover .notebook2 {
+display: block;
+}
+.notebook2 {
+position: absolute;
+top: 0px;
+left: 0px;
+opacity: 0;
+transition: opacity 0.5s linear;
+}
+.kmj:hover .notebook2 {
+opacity: 1;
+}
+
+
+
+.yys {
+width: 458px;
+margin: 0px auto;
+position: relative
+}
+.notebook2 {
+position: absolute;
+top: 0px;
+left: 0px;
+display: none;
+}
+.yys:hover .notebook2 {
+display: block;
+}
+.notebook2 {
+position: absolute;
+top: 0px;
+left: 0px;
+opacity: 0;
+transition: opacity 0.5s linear;
+}
+.yys:hover .notebook2 {
+opacity: 1;
+}
+
+
+.kny {
+width: 458px;
+margin: 0px auto;
+position: relative
+}
+.notebook2 {
+position: absolute;
+top: 0px;
+left: 0px;
+display: none;
+}
+.kny:hover .notebook2 {
+display: block;
+}
+.notebook2 {
+position: absolute;
+top: 0px;
+left: 0px;
+opacity: 0;
+transition: opacity 0.5s linear;
+}
+.kny:hover .notebook2 {
+opacity: 1;
+}
+
+div{display:inline-block}
+
+
